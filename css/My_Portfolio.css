@@ -1,0 +1,886 @@
+.my-portfolio.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+.my-portfolio .heroSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #080808;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .heroSection {
+    width: 1024px;
+    height: 699px;
+  }
+}
+.my-portfolio .contentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto 45px;
+  width: 86.72%;
+  max-width: 1110.015625px;
+}
+.my-portfolio .overviewGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 211px 0px 207px 8.56%;
+  width: 492px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .my-portfolio .overviewGroup {
+    margin: 150px 430px 150px auto;
+  }
+}
+@media (max-width: 767px) {
+  .my-portfolio .overviewGroup {
+    margin: 150px auto;
+  }
+}
+@media (max-width: 575px) {
+  .my-portfolio .overviewGroup {
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .overviewGroup {
+    margin: 50px auto;
+  }
+}
+.my-portfolio .overviewFlexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .my-portfolio .overviewFlexCol {
+    margin: 0px 50px 0px 0px;
+  }
+}
+.my-portfolio .heroTitle {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 600 44px/1.18 "Raleway", Helvetica, Arial, serif;
+  color: white;
+}
+@media (max-width: 991px) {
+  .my-portfolio .heroTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .heroTitle {
+    font-size: 36px;
+  }
+}
+.my-portfolio .introText {
+  position: relative;
+  margin: 20px 0px 0px;
+  font: 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: white;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px 190px;
+  width: 100px;
+  height: 20px;
+  font: 14px/1 Arial, Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+  background-color: #7ed321;
+  padding: 0px 0px 0px 0px;
+  
+}
+.my-portfolio .imageGroup {
+  position: absolute;
+  top: -61px;
+  right: -428px;
+  display: flex;
+  flex-direction: column;
+  width: 920px;
+  height: 425px;
+}
+.my-portfolio .imageFlexRow {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 920px;
+  height: 425px;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .my-portfolio .imageFlexRow {
+    left: 35%;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .imageFlexRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.my-portfolio .profileImage {
+  position: relative;
+  margin: 0px auto 0px 550px;
+  width: 100%;
+  min-width: 0px;
+  height: auto;
+  border-radius: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .profileImage {
+    margin: 0px auto 0px 500px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .my-portfolio .profileImage {
+    margin: 0px auto 0px 580px;
+  }
+}
+@media (max-width: 575px) {
+  .my-portfolio .profileImage {
+    margin: 0px auto 0px 16px;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .profileImage {
+    margin: 0px auto 0px 8px;
+  }
+}
+.my-portfolio .navigationContentBox {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 1110px;
+  height: 70px;
+  background-color: #1b1b1b;
+  border-radius: 0px 0px 8px 8px;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 1199px) {
+  .my-portfolio .navigationContentBox {
+    left: 40%;
+    width: 1020px;
+  }
+}
+.my-portfolio .navigationFlexRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 24px auto 27px;
+  width: 919.953125px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .my-portfolio .navigationFlexRow {
+    margin: 24px 32px 27px;
+  }
+}
+@media (max-width: 575px) {
+  .my-portfolio .navigationFlexRow {
+    margin: 24px 16px 27px;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .navigationFlexRow {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    margin: 24px 8px 27px;
+  }
+}
+.my-portfolio .navigationFlexRowItems {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 0px 0px 1px;
+  width: 717px;
+  min-width: 0px;
+}
+@media (max-width: 383px) {
+  .my-portfolio .navigationFlexRowItems {
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+}
+.my-portfolio .navHome {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 400 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.my-portfolio .navHome:hover {
+  background-color: #ffffffff;
+}
+.my-portfolio .navProjects {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.my-portfolio .navProjects:hover {
+  background-color: #ffffffff;
+}
+.my-portfolio .navAboutMe {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9b9b9b;
+  letter-spacing: 0.14px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.my-portfolio .navAboutMe:hover {
+  background-color: #ffffffff;
+}
+.my-portfolio .navGetInTouch {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 400 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+.my-portfolio .navGetInTouch:hover {
+  background-color: #ffffffff;
+}
+.my-portfolio .img {
+  position: absolute;
+  top: 15px;
+  left: 1050px;
+  width: 32.52px;
+  max-width: 100%;
+  height: 50%;
+  border-radius: 0px;
+  border-style: none;
+  border-width: 0px;
+  -o-object-fit: auto;
+  object-fit: auto;
+  outline-color: #9b9b9b;
+  outline-style: none;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .img {
+    left: 840px;
+  }
+}
+.my-portfolio .img:hover {
+  transform: scale(1.1);
+}
+.my-portfolio .img1 {
+  position: absolute;
+  top: 15px;
+  right: 1010px;
+  bottom: 0px;
+  left: 1000px;
+  width: 32.52px;
+  height: 50%;
+  border: 0px none black;
+  -o-object-fit: auto;
+  object-fit: auto;
+  outline-color: black;
+  outline-style: none;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .img1 {
+    left: 450px;
+  }
+}
+.my-portfolio .img1:hover {
+  transform: scale(1.1);
+}
+.my-portfolio .caseStudiesSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 202px 0px;
+  margin: 80px auto 175px;
+  width: 897.015625px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .my-portfolio .flexCol {
+    gap: 150px 0px;
+    margin: 80px auto 150px;
+  }
+}
+@media (max-width: 575px) {
+  .my-portfolio .flexCol {
+    gap: 80px 0px;
+    margin: 80px auto;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .flexCol {
+    gap: 50px 0px;
+    margin: 50px auto;
+  }
+}
+.my-portfolio .flexCol1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .flexCol2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0px;
+  margin: 0px auto;
+  width: 570px;
+  max-width: 85%;
+}
+.my-portfolio .bigTitle1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font: 600 34px/1.17 "Raleway", Helvetica, Arial, serif;
+  color: #080808;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .my-portfolio .bigTitle1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .bigTitle1 {
+    font-size: 28px;
+  }
+}
+.my-portfolio .caseStudiesParagraph {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font: 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  text-align: center;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .flexCol3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+  margin: 87px 0px 0px;
+  width: 421px;
+  max-width: 85%;
+}
+@media (max-width: 575px) {
+  .my-portfolio .flexCol3 {
+    margin: 80px 0px 0px;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .flexCol3 {
+    margin: 50px 0px 0px;
+  }
+}
+.my-portfolio .fintechBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 72px;
+  max-width: 100%;
+  font: 700 12px/2 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #ffa217;
+  text-align: center;
+  background-color: #fff6e9;
+  border-radius: 12px 12px 12px 12px;
+  padding: 0px 10px 0px 10px;
+  letter-spacing: 0.12px;
+}
+.my-portfolio .group1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .flexCol4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+}
+.my-portfolio .workNameTitle1 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 800 24px/1.16 "Raleway", Helvetica, Arial, serif;
+  color: #080808;
+}
+@media (max-width: 991px) {
+  .my-portfolio .workNameTitle1 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .workNameTitle1 {
+    font-size: 20px;
+  }
+}
+.my-portfolio .workDescription1 {
+  position: relative;
+  font: 400 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .workImage1 {
+  position: absolute;
+  top: -71px;
+  right: -471px;
+  width: 445px;
+  height: 300px;
+}
+.my-portfolio .flexCol5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+  margin: 202px 0px 0px auto;
+  width: 421px;
+  max-width: 85%;
+}
+@media (max-width: 991px) {
+  .my-portfolio .flexCol5 {
+    margin: 150px 0px 0px auto;
+  }
+}
+@media (max-width: 575px) {
+  .my-portfolio .flexCol5 {
+    margin: 80px 0px 0px auto;
+  }
+}
+@media (max-width: 383px) {
+  .my-portfolio .flexCol5 {
+    margin: 50px 0px 0px auto;
+  }
+}
+.my-portfolio .edTechBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  max-width: 100%;
+  font: 700 12px/2 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #000aff;
+  text-align: center;
+  background-color: #d0e6ff;
+  border-radius: 12px 12px 12px 12px;
+  padding: 0px 10px 0px 10px;
+  letter-spacing: 0.12px;
+}
+.my-portfolio .group2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .workNameTitle2 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 800 24px/1.16 "Raleway", Helvetica, Arial, serif;
+  color: #080808;
+}
+@media (max-width: 991px) {
+  .my-portfolio .workNameTitle2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .workNameTitle2 {
+    font-size: 20px;
+  }
+}
+.my-portfolio .workDescription2 {
+  position: relative;
+  font: 400 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .workImage2 {
+  position: absolute;
+  top: -71px;
+  left: -476px;
+  width: 445px;
+  height: 300px;
+}
+.my-portfolio .flexCol6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+  width: 421px;
+  max-width: 85%;
+}
+.my-portfolio .pharmaBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  max-width: 100%;
+  font: 700 12px/2 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #2ab090;
+  text-align: center;
+  background-color: #e0fff8;
+  border-radius: 12px 12px 12px 12px;
+  padding: 0px 10px 0px 10px;
+  letter-spacing: 0.12px;
+}
+.my-portfolio .group3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .workNameTitle3 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  font: 800 24px/1.16 "Raleway", Helvetica, Arial, serif;
+  color: #080808;
+}
+@media (max-width: 991px) {
+  .my-portfolio .workNameTitle3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .workNameTitle3 {
+    font-size: 20px;
+  }
+}
+.my-portfolio .workDescription3 {
+  position: relative;
+  font: 400 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .workImage3 {
+  position: absolute;
+  top: -71px;
+  right: -471px;
+  width: 445px;
+  height: 300px;
+}
+.my-portfolio .projectsSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 1200px;
+  background-color: #080808;
+}
+.my-portfolio .projectsTitle {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font: 600 34px/1.17 "Raleway", Helvetica, Arial, serif;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .projectsTitle {
+    left: 45%;
+  }
+}
+@media (max-width: 991px) {
+  .my-portfolio .projectsTitle {
+    left: 40%;
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .projectsTitle {
+    font-size: 28px;
+  }
+}
+.my-portfolio .txt {
+  position: relative;
+  margin: 400px 1180px 782px 30%;
+  width: 700px;
+  height: 700px;
+  font: 34px/1 Arial, Helvetica, Arial, serif;
+  color: white;
+}
+@media (max-width: 1199px) {
+  .my-portfolio .txt {
+    margin: 400px 1180px 782px 25%;
+  }
+}
+@media (max-width: 991px) {
+  .my-portfolio .txt {
+    margin: 400px 1180px 782px 7%;
+  }
+}
+.my-portfolio .contactSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .contactFormColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px 0px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1280px;
+}
+.my-portfolio .contactGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.my-portfolio .rectangle1 {
+  position: relative;
+  min-height: 672px;
+  background-color: white;
+}
+.my-portfolio .formFieldsColumn {
+  position: absolute;
+  top: 81px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  height: 511px;
+  background-color: #d9caca;
+  transform: translate(-50%, 0);
+}
+.my-portfolio .titleAndDescriptionColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0px;
+  width: 100%;
+}
+.my-portfolio .contactTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font: 800 34px/1.17 "Raleway", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .my-portfolio .contactTitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .my-portfolio .contactTitle {
+    font-size: 28px;
+  }
+}
+.my-portfolio .contactDescription {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font: 14px/1.71 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: black;
+  text-align: center;
+  letter-spacing: 0.14px;
+}
+.my-portfolio .emailInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 40px 0px 0px;
+  width: 349.96875px;
+  max-width: 85%;
+  font: 600 12px/1.33 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: black;
+}
+.my-portfolio .emailButton_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  padding: 9.5px 12px 9.5px 12px;
+  outline: 1px solid #d8d8d8;
+  outline-offset: -1px;
+}
+.my-portfolio .emailButton {
+  width: 100%;
+  font: 400 12px/1.75 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #757575;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.my-portfolio .emailButton:focus {
+  outline: none;
+}
+.my-portfolio .mobileInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px;
+  width: 349.96875px;
+  max-width: 85%;
+  font: 600 12px/1.33 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: black;
+}
+.my-portfolio .mobileButton_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  padding: 9.5px 12px 9.5px 12px;
+  outline: 1px solid #d8d8d8;
+  outline-offset: -1px;
+}
+.my-portfolio .mobileButton {
+  width: 100%;
+  font: 400 12px/1.75 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #757575;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.my-portfolio .mobileButton:focus {
+  outline: none;
+}
+.my-portfolio .messageInfo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px;
+  width: 349.96875px;
+  max-width: 85%;
+  font: 600 12px/1.33 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: black;
+}
+.my-portfolio .messageButton_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 4px 4px 4px 4px;
+  padding: 49.5px 12px 49.5px 12px;
+  outline: 1px solid #d8d8d8;
+  outline-offset: -1px;
+}
+.my-portfolio .messageButton {
+  width: 100%;
+  font: 400 12px/1.75 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #757575;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  vertical-align: top;
+}
+.my-portfolio .messageButton:focus {
+  outline: none;
+}
+.my-portfolio .submitButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 20px auto 0px;
+  width: 350px;
+  max-width: 100%;
+  background-color: #3f8e00;
+  border-radius: 4px 4px 4px 4px;
+  padding: 16px 8px 16px 8px;
+  outline: 1px solid #62ba1b;
+  outline-offset: -1px;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.298);
+}
+.my-portfolio .submitButtonText {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-width: 0px;
+  font: 700 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: white;
+}
+.my-portfolio .submitButtonIcon {
+  position: relative;
+  margin: 4px 0px;
+  width: 5px;
+  min-width: 0px;
+  height: 10px;
+}
+.my-portfolio .footerText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font: 14px/1.28 "IBM Plex Mono", Helvetica, Arial, serif;
+  color: #9c9c9c;
+  text-align: center;
+  background-color: #1b1b1b;
+  padding: 25px 16px 26px 16px;
+  letter-spacing: -0.36px;
+}
+@media (max-width: 383px) {
+  .my-portfolio .footerText {
+    padding: 25px 8px 26px 8px;
+  }
+}
+
