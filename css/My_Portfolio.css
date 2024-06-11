@@ -87,20 +87,7 @@
   color: white;
   letter-spacing: 0.14px;
 }
-.my-portfolio .btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0px 0px 190px;
-  width: 100px;
-  height: 20px;
-  font: 14px/1 Arial, Helvetica, Arial, serif;
-  color: white;
-  text-align: center;
-  background-color: #7ed321;
-  padding: 0px 0px 0px 0px;
-  
-}
+
 .my-portfolio .imageGroup {
   position: absolute;
   top: -61px;
