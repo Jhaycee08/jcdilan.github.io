@@ -1,167 +1,189 @@
 <!DOCTYPE html>
 <html>
-<!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
-    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="./css/My_Portfolio.css" />
-    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/sticky-js@1.3.0/dist/sticky.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
-    
-
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1DA1F2",
+                        secondary: "#14171A",
+                        accent: "#657786",
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- Add this in the <head> section to include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("xr2F0DZKCibmwoOaU"); // Replace "xr2F0DZKCibmwoOaU" with your actual EmailJS User ID
+    </script>
 </head>
 
-<body class="flex-column">
-    <main class="my-portfolio main">
+<body class="flex flex-col">
+    <div class="bg-primary text-white shadow-md fixed top-0 w-full z-50">
+        <nav class="flex justify-between items-center px-6 py-4">
+            <!-- Logo -->
+            <div class="text-2xl font-bold">
+                <a href="#heroTitle" class="hover:text-accent">My Portfolio</a>
+            </div>
+            <!-- Burger Menu Button -->
+            <button id="menuButton" class="block md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <!-- Navigation Links -->
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="#heroTitle" class="hover:text-accent transition duration-300">Home</a>
+                <a href="#bigTitle1" class="hover:text-accent transition duration-300">Projects</a>
+                <a href="#About_me" class="hover:text-accent transition duration-300">About Me</a>
+                <a href="#contact" class="hover:text-accent transition duration-300">Get In Touch</a>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden flex-col space-y-4 bg-primary text-white px-6 py-4 md:hidden">
+            <a href="#heroTitle" class="hover:text-accent transition duration-300">Home</a>
+            <a href="#bigTitle1" class="hover:text-accent transition duration-300">Projects</a>
+            <a href="#About_me" class="hover:text-accent transition duration-300">About Me</a>
+            <a href="#contact" class="hover:text-accent transition duration-300">Get In Touch</a>
+        </div>
+    </div>
+    <!-- Add padding to the main element -->
+    <main class="my-portfolio pt-20">
         <section class="heroSection" id="heroTitle">
             <div class="contentBox">
-                <div class="overviewGroup">
-                    <div class="overviewFlexCol">
-                        <h1 class="heroTitle">Johndrell Cesar M. Dilan</h1>
-                        <p class="introText">
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="text-center md:text-left">
+                        <h1 class="text-4xl font-bold">Johndrell Cesar M. Dilan</h1>
+                        <p class="mt-4 text-lg">
                             I am currently a student at the University of the Cordilleras. I am studying Bachelor of Science in
                             Information Technology Major in Web Technologies Track.
                         </p>
                     </div>
-                    <div class="imageGroup">
-                        <div class="imageFlexRow">
-                            <img class="profileImage" src="./assets/33e09ca3e26aa9d941e37ecc939eacd4.jpg" alt="alt text" />
-                        </div>
-                        <div class="navigationContentBox sticky-effect" data-sticky-wrap="true" data-sticky-class="sticking">
-                            <div class="navigationFlexRow">
-                                <div class="navigationFlexRowItems" id="myTopnav">
-                                    <div class="navHome"><a href="#heroTitle">Home</a></div>
-                                    <div class="navProjects"><a href="#bigTitle1">Projects</a></div>
-                                    <div class="navAbout"><a href="#About_me">About Me</a></div>
-                                    <div class="scroll"><a href="#contact">Get In Touch</a></div>
-                                </div>
-                            </div>
-                            <a href="https://www.facebook.com/johndrell.dilan">
-                                <img class="img" src="./assets/228aff915d0a2c5f1ddfd86e7a195808.jpg" alt="fb" />
-                            </a>
-                            <a href="https://www.instagram.com/jcdilan08/">
-                                <img class="img1" src="./assets/cb7b253d4ba0074a75fede16958710d7.png" alt="ig" />
-                            </a>
-                        </div>
+                    <div class="mt-6 md:mt-0 md:ml-8">
+                        <img class="rounded-full w-32 h-32" src="./assets/33e09ca3e26aa9d941e37ecc939eacd4.jpg" alt="Profile Image" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="caseStudiesSection" id="bigTitle1">
-            <div class="flexCol">
-                <div class="flexCol1">
-                    <div class="flexCol2">
-                        <h1 class="bigTitle1">Projects</h1>
-                        <p class="caseStudiesParagraph">
-                            I don&#x27;t have any projects at the moment. Contents are for fillers only
+        <section class="caseStudiesSection bg-gray-100 py-12" id="bigTitle1">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">Projects</h1>
+                <p class="mt-4 text-gray-600">
+                    Currently these are my projects.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 mt-8">
+                <div class="text-center max-w-sm">
+                    <div class="mt-4">
+                        <h2 class="text-xl font-semibold">E-commerce Landing Page</h2>
+                        <p class="mt-2 text-gray-600">
+                            Front end of a landing page utilizing HTML, CSS, and JavaScript. The project is a simple e-commerce landing page that showcases products and allows users to add them to their cart.
                         </p>
-                    </div>
-                    <div class="flexCol3">
-                        <button class="fintechBtn">Fintech</button>
-                        <div class="group1">
-                            <div class="flexCol4">
-                                <h2 class="workNameTitle1">Work name here</h2>
-                                <p class="workDescription1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                </p>
-                            </div>
-                            <img class="workImage1" src="./assets/ae5fbb72b5181c4ddaa9136e9b9060b9.png" alt="alt text" />
-                        </div>
-                    </div>
-                    <div class="flexCol5">
-                        <button class="edTechBtn">EdTech</button>
-                        <div class="group2">
-                            <div class="flexCol4">
-                                <h2 class="workNameTitle2">Work name here</h2>
-                                <p class="workDescription2">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                                </p>
-                            </div>
-                            <img class="workImage2" src="./assets/d29477c7f1cb87e3a0c05efcbb64cb9d.png" alt="alt text" />
-                        </div>
-                    </div>
-                </div>
-                <div class="flexCol6">
-                    <button class="pharmaBtn">Pharma</button>
-                    <div class="group3">
-                        <div class="flexCol4">
-                            <h2 class="workNameTitle3">Work name here</h2>
-                            <p class="workDescription3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                            </p>
-                        </div>
-                        <img class="workImage3" src="./assets/d18f7bfe480e4479a9f14395453094b6.png" alt="alt text" />
+                        <img class="mt-4 w-full h-48 object-cover rounded-lg shadow-md" src="./assets/landing page 2.png" alt="Work Image" />
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="projectsSection" id="About_me">
-            <h1 class="projectsTitle">About Me</h1>
-            <div class="txt">
+            <h1 class="text-3xl font-bold text-center">About Me</h1>
+            <div class="mt-4 text-center max-w-2xl mx-auto text-gray-600">
                 I was born and raised in Baguio City in the 1990&#x27;s. I grew up near a military camp where people dream of
                 becoming an officer one day. I stopped college and started working at the age of 18. After 9 years of working I
                 realized the importance of education. That is why today I came back to study and pursue my dreams of becoming
                 an IT professional. <br />I am knowledgeable in C, C++, C#, Java, and Python programming languages. I have a
-          background in computer troubleshooting, printer repair, fiber cable installation/repair, copper cable
-          installation/repair, and burn-in board repair.
+                background in computer troubleshooting, printer repair, fiber cable installation/repair, copper cable
+                installation/repair, and burn-in board repair.
             </div>
         </section>
 
-        <section class="contactSection">
-            <div class="contactFormColumn">
-                <div class="contactGroup">
-                    <div class="rectangle1"></div>
-                    <div class="formFieldsColumn">
-                        <div class="titleAndDescriptionColumn">
-                            <h1 class="contactTitle" id="contact">Get In Touch</h1>
-                            <p class="contactDescription">
-                                You can also message me your contact details. Just fill up the form below. Thank you!
-                            </p>
-                        </div>
-                        <div class="emailInfo">Email</div>
-                        <button class="emailButton_box">
-                            <input type="text" class="emailButton" placeholder="Please enter your email" />
-                        </button>
-                        <div class="mobileInfo">Mobile</div>
-                        <button class="mobileButton_box">
-                            <input type="text" class="mobileButton" placeholder="Enter mobile" />
-                        </button>
-                        <div class="messageInfo">Message</div>
-                        <button class="messageButton_box">
-                            <input type="text" class="messageButton" placeholder="Enter your message" /></button><button class="submitButton">
-                            <div class="submitButtonText">Submit</div>
-                            <img class="submitButtonIcon" src="./assets/dda89581c888e1a1d2ef52c6d5e18a7e.svg" alt="alt text" />
-                        </button>
+        <!-- Updated Contact Section -->
+        <section class="contactSection bg-gray-100">
+            <div class="max-w-lg mx-auto mt-8">
+                <h1 class="text-3xl font-bold text-center" id="contact">Get In Touch</h1>
+                <p class="mt-4 text-center text-gray-600">
+                    You can also message me your contact details. Just fill up the form below. Thank you!
+                </p>
+                <form id="contactForm" class="mt-8 space-y-4">
+                    <div>
+                        <label class="block text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Please enter your email" required />
                     </div>
-                </div>
-                <div class="footerText">Copyright Johndrell ©</div>
+                    <div>
+                        <label class="block text-gray-700">Mobile</label>
+                        <input type="text" id="mobile" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter mobile" required />
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Message</label>
+                        <textarea id="message" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+                </form>
+                <div id="formResponse" class="mt-4 text-center text-gray-600"></div>
             </div>
         </section>
 
+        <div class="mt-4 text-center text-gray-500">Copyright Johndrell ©</div>
+        <div class="flex justify-center mt-4 space-x-4">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/johndrell.dilan" class="text-blue-600 hover:text-blue-800">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/jcdilan08/" class="text-pink-500 hover:text-pink-700">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
     </main>
-    <script type="text/javascript">
-        AOS.init();
-        new Sticky('.sticky-effect');
-    </script>
     <script>
-        const navigationFlexRow = document.querySelector("navigationFlexRow");
-        const nav = document.querySelector("navigationFlexRowItems");
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-        navigationFlexRow.addEventListener("click", () => {
-        nav.classList.toggle("active")
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Handle form submission
+        const contactForm = document.getElementById('contactForm');
+        const formResponse = document.getElementById('formResponse');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const email = document.getElementById('email').value;
+            const mobile = document.getElementById('mobile').value;
+            const message = document.getElementById('message').value;
+
+            // Send email using EmailJS
+            emailjs.send("service_gzrgntc", "template_ibagega", {
+                email: email,
+                mobile: mobile,
+                message: message,
+            }).then(
+                function (response) {
+                    console.log("SUCCESS!", response.status, response.text); // Log success response
+                    formResponse.textContent = "Message sent successfully!";
+                    formResponse.classList.remove("text-red-500");
+                    formResponse.classList.add("text-green-500");
+                    contactForm.reset(); // Clear the form
+                },
+                function (error) {
+                    console.error("FAILED...", error); // Log error response
+                    formResponse.textContent = "Failed to send message. Please try again.";
+                    formResponse.classList.remove("text-green-500");
+                    formResponse.classList.add("text-red-500");
+                }
+            );
         });
     </script>
 </body>
